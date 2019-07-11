@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h1 id="head">Analog & Digital Clock with alarm Functionality </h1>
+    <div id="clockdiv"><canvas id="mycanvas"></canvas></div>
+    <script src="js1.js"></script>
+    <div id="digiclock1" class="digi"></div>
+    <div id="digiclock2" class="digi"></div>
+    <div id="content">
+        <div id="setalarm">
+            Set Your Alarm: <input id="t" type='time' /><button onclick="ring()" id="alarmset" class="alarmbutton">Set Alarm</button>
+        </div>
+        <div id="houralarm">
+            Set Your Alarm: <input class="hour h" type='number' min="1" max="12" /><input class="hour m" type='number' min="00" max="59" /><select class="hour s" name="ampm"><option value="AM">AM</option><option value="PM">PM</option></select>
+            <button
+                onclick="ring()" id="hourset" class="alarmbutton">Set Your Alarm</button>
+        </div>
+        <button id="stop" class="alarmbutton" onclick="stopalarm()" type="button">Pause Audio</button>
+        <audio id="myAudio">
+  
+        <source src=" analog-watch-alarm_daniel-simion.mp3" type="audio/mpeg">
+        
+    </audio>
+
+        <div id="buttons">
+            <button id="a1" onClick="switchclock()">Switch to Digital</button>
+            <button id="a2" onClick="formatclock()">24 hour clock</button>
+            <button id="alarm" onClick="myset()">Set Alarm</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

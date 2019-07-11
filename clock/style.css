@@ -1,0 +1,172 @@
+html, body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+}
+#head {
+     text-align: center;
+}
+
+#mycanvas{
+    position: absolute;
+    left: 35%;
+}
+
+#content {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+
+}
+
+#setalarm{
+    height: 100px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#a1 {
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    left: 25%;
+    color: white;
+    background-color: #2DB684;
+    border: none;
+    font-family: arial;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-style: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+  
+}
+
+#alarm {
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    left: 65%;
+    color: white;
+    background-color: #2DB684;
+    border: none;
+    font-family: arial;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-style: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+}
+
+#a1:hover {
+	background-color: #223F7E;
+	text-decoration: none;
+	color: white;
+}
+
+#a2 {
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    left: 45%;
+    color: white;
+    background-color: #2DB684;
+    border: none;
+    font-family: arial;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-style: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+    visibility: hidden;
+  
+}
+#a2:hover {
+	background-color: #223F7E;
+	text-decoration: none;
+	color: white;
+}
+
+#alarm:hover {
+	background-color: #223F7E;
+	text-decoration: none;
+	color: white;
+}
+
+#setalarm{
+    text-align: center;
+    font-size: 30px;
+    visibility: hidden;
+}
+
+.hour {
+    margin: 10px;
+}
+
+#houralarm{
+    text-align: center;
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+
+.alarmbutton{
+    width: 180px;
+    height: 50px;
+    color: white;
+   
+    background-color: #2DB684;
+    border: none;
+    font-family: arial;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    font-style: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+
+}
+
+.alarmbutton:hover {
+	background-color: #223F7E;
+	text-decoration: none;
+	color: white;
+}
+
+#alarmset {
+    position: absolute;
+    left: 65%;
+}
+
+#stop {
+    visibility: hidden;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+}
+
+
+.digi {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
